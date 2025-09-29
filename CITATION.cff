@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: Please cite this code and the associated paper.
+title: Mumps genotype G genomic analysis for the 2023 Islamabad outbreak
+authors:
+  - family-names: Haider
+    given-names: Syed Adnan
+version: 1.0.0
+date-released: 2025-09-29
+preferred-citation:
+  type: article
+  title: Circulation of Mumps virus genotype G in Pakistan during 2023 outbreak
+  authors:
+    - family-names: Umair
+      given-names: Massab
+    - family-names: Haider
+      given-names: Syed Adnan
+    - family-names: Jamal
+      given-names: Zunera
+    - family-names: Hakim
+      given-names: Rabia
+    - family-names: Farooq
+      given-names: Ammara
+    - family-names: Salman
+      given-names: Muhammad
+  year: 2024
+  journal: Future Virology
+  volume: 18
+  issue: 18
+  pages: 1137-1149
+  doi: 10.2217/fvl-2023-0145

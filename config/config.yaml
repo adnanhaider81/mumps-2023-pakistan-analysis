@@ -1,0 +1,51 @@
+pairs:
+  - sample: MuV_001
+    r1: data-private/MuV_001_R1.fastq.gz
+    r2: data-private/MuV_001_R2.fastq.gz
+
+# Optional Sanger SH sequences
+# sh_fasta: data-sh/sh_sequences.fasta
+
+reference_preference:
+  genotype_g_pref:
+    - ON148331.1   # Sheffield
+    - JN012242.1   # Iowa
+    - LC633315.1   # Yokohama 2010
+    - KY006858.1   # Ontario 2010
+    - EU370207.1   # Croatia 2005
+    - MW261742.1   # Utrecht 2010
+    - AF280799.1   # WHO G
+
+context_wg_acc:
+  - ON148331.1
+  - JN012242.1
+  - JX287385.1
+  - LC633315.1
+  - KY006858.1
+  - EU370207.1
+  - MW261742.1
+  - LC633320.1
+  - LC685516.1
+  - LC685525.1
+
+context_sh_acc:
+  - AF280799.1
+  - FN431985.1
+  - KY006858.1
+  - KF738114.1
+  - KY604739.2
+  - MT506353.1
+  - KX609907.1
+  - KX609928.1
+  - KX609935.1
+
+params:
+  threads: 4
+  trim_adapters: env/TruSeq3-PE.fa
+  min_depth_consensus: 10
+  min_qual: 20
+  iqtree_model_sh: K2+I
+  iqtree_model_wg: GTR+G
+  bootstrap: 1000
+  max_blast_hits: 50
+  use_model_finder: false
