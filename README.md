@@ -131,7 +131,7 @@ Notes
 
 ## How to cite
 - Paper: Umair M, Haider SA, Jamal Z, Hakim R, Farooq A, Salman M. Circulation of Mumps virus genotype G in Pakistan during 2023 outbreak. Future Virology. 2024. 18(18):1137-1149. https://doi.org/10.2217/fvl-2023-0145
-- Software: Haider SA. Mumps genotype G genomic analysis for the 2023 Islamabad outbreak. Version 1.0.0. {year}. GitHub repository. Include commit hash when available.
+- Software: Haider SA. Mumps genotype G genomic analysis for the 2023 Islamabad outbreak. Version 1.4.2. {2024}. GitHub repository.
 
 ## References
 - Andrews S. 2010. FastQC. Babraham Bioinformatics. 
