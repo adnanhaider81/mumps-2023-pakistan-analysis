@@ -1,6 +1,6 @@
 # Circulation of mumps virus genotype G in Pakistan during the 2023 outbreak
 
-Reproducible code and workflow that mirror the analysis in the Future Virology research article on the Islamabad 2023 mumps outbreak. This repository covers both partial SH gene analysis and whole genome analysis and follows the toolchain and model choices reported in the paper.
+Reproducible code and workflow that mirror the data analysis in the research article on the Islamabad 2023 mumps outbreak. This repository covers both partial SH gene analysis and whole genome analysis and follows the toolchain and model choices reported in the paper.
 
 ## Program summary
 End to end analysis of MuV genotype G using mNGS and Sanger SH sequences. Steps match the study design and are fully scripted so reviewers and collaborators can reproduce results.
