@@ -40,15 +40,12 @@ jl_sh = get_sh_nt(jl).translate()
 sample = list(SeqIO.parse(a.sample_sh, 'fasta'))[0].seq.translate()
 
 with open(a.out_tsv, 'w') as out:
-    out.write('against	pos	ref	alt
-')
+    out.write('against\tpos\tref\talt\n')
     L = min(len(sample), len(shef_sh))
     for i in range(L):
         if sample[i] != shef_sh[i]:
-            out.write(f'Sheffield	{i+1}	{shef_sh[i]}	{sample[i]}
-')
+            out.write(f'Sheffield\t{i+1}\t{shef_sh[i]}\t{sample[i]}\n')
     L = min(len(sample), len(jl_sh))
     for i in range(L):
         if sample[i] != jl_sh[i]:
-            out.write(f'JerylLynn	{i+1}	{jl_sh[i]}	{sample[i]}
-')
+            out.write(f'JerylLynn\t{i+1}\t{jl_sh[i]}\t{sample[i]}\n')

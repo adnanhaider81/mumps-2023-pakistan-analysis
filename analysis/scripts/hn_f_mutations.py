@@ -62,8 +62,7 @@ hn_aa = hn_nt.translate()
 f_aa = f_nt.translate()
 
 with open(a.out_tsv, 'w') as out:
-    out.write('gene	pos	ref	alt	against
-')
+    out.write('gene\tpos\tref\talt\tagainst\n')
     # Fetch JL proteins
     Entrez.email = email
     h1 = Entrez.efetch(db='protein', id=a.jl_minor, rettype='fasta', retmode='text')
@@ -73,13 +72,11 @@ with open(a.out_tsv, 'w') as out:
     L = min(len(hn_aa), len(jl_minor_seq))
     for i in range(L):
         if hn_aa[i] != jl_minor_seq[i]:
-            out.write(f'HN	{i+1}	{jl_minor_seq[i]}	{hn_aa[i]}	JL_minor
-')
+            out.write(f'HN\t{i+1}\t{jl_minor_seq[i]}\t{hn_aa[i]}\tJL_minor\n')
     L = min(len(hn_aa), len(jl_major_seq))
     for i in range(L):
         if hn_aa[i] != jl_major_seq[i]:
-            out.write(f'HN	{i+1}	{jl_major_seq[i]}	{hn_aa[i]}	JL_major
-')
+            out.write(f'HN\t{i+1}\t{jl_major_seq[i]}\t{hn_aa[i]}\tJL_major\n')
     # F vs ref AA
     for f in ref.features:
         if f.type == 'CDS' and 'fusion' in ' '.join(f.qualifiers.get('product', [])).lower():
@@ -87,6 +84,5 @@ with open(a.out_tsv, 'w') as out:
             L = min(len(f_aa), len(ref_f_aa))
             for i in range(L):
                 if f_aa[i] != ref_f_aa[i]:
-                    out.write(f'F	{i+1}	{ref_f_aa[i]}	{f_aa[i]}	Ref_{a.ref_acc}
-')
+                    out.write(f'F\t{i+1}\t{ref_f_aa[i]}\t{f_aa[i]}\tRef_{a.ref_acc}\n')
             break
