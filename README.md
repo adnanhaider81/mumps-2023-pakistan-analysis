@@ -9,6 +9,23 @@ Published paper: Umair M, Haider SA, Jamal Z, Hakim R, Farooq A, Salman M. Circu
 
 Current software release: `1.0.1`
 
+## Workflow overview
+
+This repository documents the mumps genotype G analysis path from raw sequence data to SH and whole-genome phylogenies, mutation summaries, and manuscript-style outputs. The workflow supports both metagenomic whole-genome sequencing and optional Sanger SH sequences.
+
+```mermaid
+flowchart LR
+  A["Buccal or throat-swab FASTQ"] --> B["QC and trimming"]
+  B --> C["De novo assembly and BLAST"]
+  C --> D["Reference selection"]
+  D --> E["Masked consensus"]
+  E --> F["SH extraction"]
+  E --> G["Whole-genome alignment"]
+  F --> H["SH phylogeny"]
+  G --> I["Whole-genome phylogeny"]
+  E --> J["SH, HN, and F mutation summaries"]
+```
+
 ## Program summary
 End to end analysis of MuV genotype G using mNGS and Sanger SH sequences. Steps match the study design and are fully scripted so reviewers and collaborators can reproduce results.
 
@@ -138,7 +155,7 @@ Notes
 
 ## How to cite
 - Paper: Umair M, Haider SA, Jamal Z, Hakim R, Farooq A, Salman M. Circulation of Mumps virus genotype G in Pakistan during 2023 outbreak. Future Virology. 2024. 18(18):1137-1149. https://doi.org/10.2217/fvl-2023-0145
-- Software: Haider SA. Mumps genotype G genomic analysis for the 2023 Islamabad outbreak. Version 1.0.1. Zenodo. https://doi.org/10.5281/zenodo.20257887
+- Software: Haider SA. Mumps Virus Genotype G Outbreak Genomics, Islamabad 2023. Version 1.0.1. Zenodo. https://doi.org/10.5281/zenodo.20257887
 - All-version software DOI: https://doi.org/10.5281/zenodo.20257440
 
 ## References
