@@ -1,5 +1,7 @@
 # Circulation of mumps virus genotype G in Pakistan during the 2023 outbreak
 
+[![DOI](https://zenodo.org/badge/1066149274.svg)](https://zenodo.org/badge/latestdoi/1066149274)
+
 Reproducible code and workflow that mirror the data analysis in the research article on the Islamabad 2023 mumps outbreak. This repository covers both partial SH gene analysis and whole genome analysis and follows the toolchain and model choices reported in the paper.
 
 Current software release: `1.0.0`
@@ -133,7 +135,8 @@ Notes
 
 ## How to cite
 - Paper: Umair M, Haider SA, Jamal Z, Hakim R, Farooq A, Salman M. Circulation of Mumps virus genotype G in Pakistan during 2023 outbreak. Future Virology. 2024. 18(18):1137-1149. https://doi.org/10.2217/fvl-2023-0145
-- Software: Haider SA. Mumps genotype G genomic analysis for the 2023 Islamabad outbreak. Version 1.0.0. https://github.com/adnanhaider81/mumps-2023-pakistan-analysis
+- Software: Haider SA. Mumps genotype G genomic analysis for the 2023 Islamabad outbreak. Version 1.0.0. Zenodo. https://doi.org/10.5281/zenodo.20257441
+- All-version software DOI: https://doi.org/10.5281/zenodo.20257440
 
 ## References
 - Andrews S. 2010. FastQC. Babraham Bioinformatics. 
