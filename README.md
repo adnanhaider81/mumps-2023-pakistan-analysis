@@ -2,6 +2,8 @@
 
 Reproducible code and workflow that mirror the data analysis in the research article on the Islamabad 2023 mumps outbreak. This repository covers both partial SH gene analysis and whole genome analysis and follows the toolchain and model choices reported in the paper.
 
+Current software release: `1.0.0`
+
 ## Program summary
 End to end analysis of MuV genotype G using mNGS and Sanger SH sequences. Steps match the study design and are fully scripted so reviewers and collaborators can reproduce results.
 
@@ -131,7 +133,7 @@ Notes
 
 ## How to cite
 - Paper: Umair M, Haider SA, Jamal Z, Hakim R, Farooq A, Salman M. Circulation of Mumps virus genotype G in Pakistan during 2023 outbreak. Future Virology. 2024. 18(18):1137-1149. https://doi.org/10.2217/fvl-2023-0145
-- Software: Haider SA. Mumps genotype G genomic analysis for the 2023 Islamabad outbreak. Version 1.4.2. {2024}. GitHub repository.
+- Software: Haider SA. Mumps genotype G genomic analysis for the 2023 Islamabad outbreak. Version 1.0.0. https://github.com/adnanhaider81/mumps-2023-pakistan-analysis
 
 ## References
 - Andrews S. 2010. FastQC. Babraham Bioinformatics. 
