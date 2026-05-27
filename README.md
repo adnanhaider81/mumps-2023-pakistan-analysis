@@ -153,6 +153,10 @@ Notes
 - If `use_model_finder` is set to true the pipeline adds `-m MFP` to IQ-TREE.
 - SH extraction script aligns each sample consensus to a genotype G reference to locate the 316 nt SH segment and then writes the sample SH segment to FASTA.
 
+## Data governance
+
+See [DATA_GOVERNANCE.md](DATA_GOVERNANCE.md) for public-data, restricted-data, and sample-identifier handling rules.
+
 ## How to cite
 - Paper: Umair M, Haider SA, Jamal Z, Hakim R, Farooq A, Salman M. Circulation of Mumps virus genotype G in Pakistan during 2023 outbreak. Future Virology. 2024. 18(18):1137-1149. https://doi.org/10.2217/fvl-2023-0145
 - Software: Haider SA. Mumps Virus Genotype G Outbreak Genomics, Islamabad 2023. Version 1.0.1. Zenodo. https://doi.org/10.5281/zenodo.20257887
