@@ -153,6 +153,16 @@ Notes
 - If `use_model_finder` is set to true the pipeline adds `-m MFP` to IQ-TREE.
 - SH extraction script aligns each sample consensus to a genotype G reference to locate the 316 nt SH segment and then writes the sample SH segment to FASTA.
 
+## Apptainer/Singularity container
+
+An HPC-friendly container recipe is provided at `containers/Apptainer.def`. Build it from the repository root:
+
+```bash
+apptainer build containers/mumps-2023-pakistan-analysis.sif containers/Apptainer.def
+```
+
+Use the image on systems where Apptainer or Singularity is preferred over Docker.
+
 ## Data governance
 
 See [DATA_GOVERNANCE.md](DATA_GOVERNANCE.md) for public-data, restricted-data, and sample-identifier handling rules.
