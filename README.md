@@ -9,6 +9,21 @@ Published paper: Umair M, Haider SA, Jamal Z, Hakim R, Farooq A, Salman M. Circu
 
 Current software release: `1.0.1`
 
+## Abbreviations
+
+| Term | Meaning |
+| --- | --- |
+| MuV | Mumps virus |
+| SH | Small hydrophobic gene |
+| HN | Hemagglutinin-neuraminidase gene |
+| F | Fusion gene |
+| NGS | Next-generation sequencing |
+| SPAdes | Genome assembler used for contig generation |
+| BWA | Burrows-Wheeler Aligner for read mapping |
+| MAFFT | Multiple-sequence alignment program |
+| IQ-TREE | Maximum-likelihood phylogenetic tree program |
+| QC | Quality control |
+
 ## Workflow overview
 
 This repository documents the mumps genotype G analysis path from raw sequence data to SH and whole-genome phylogenies, mutation summaries, and manuscript-style outputs. The workflow supports both metagenomic whole-genome sequencing and optional Sanger SH sequences.
